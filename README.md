@@ -1,4 +1,4 @@
-**# Wikipedia Remix (Módulo 3 — Trilha HTML)
+**# Wikipedia Remix
 
 Recriação simplificada da Wikipedia usando **HTML5 + CSS** para praticar **estrutura**, **semântica** e **acessibilidade**.  
 Inclui **menu lateral**, **abas (Ler / Editar / Ver histórico)** e **artigo** com conteúdo exemplo.
