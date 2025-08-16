@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Wikipedia Remix — Etapa 1</title>
+</head>
+<body>
+  <!-- Link de acessibilidade para pular direto ao conteúdo -->
+  <a href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Cabeçalho do site -->
+  <header>
+    <p><a href="index.html" aria-label="Página inicial">Wikipedia Remix</a></p>
+
+    <form role="search" aria-label="Pesquisar">
+      <label for="q">Buscar</label>
+      <input type="search" id="q" name="q" placeholder="Pesquisar artigos" required>
+      <button type="submit">Pesquisar</button>
+    </form>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main id="conteudo">
+  <div class="layout"><!-- apenas uma div contêiner; será estilizada depois -->
+
+    <!-- MENU LATERAL (tipo Wikipedia) -->
+    <aside class="sidebar" aria-labelledby="rotulo-nav-lateral">
+      <h2 id="rotulo-nav-lateral" class="visually-hidden">Navegação lateral</h2>
+
+      <nav aria-label="Navegação">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="index.html" aria-current="page">Página principal</a></li>
+          <li><a href="#">Conteúdo</a></li>
+          <li><a href="#">Eventos atuais</a></li>
+          <li><a href="#">Página aleatória</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Contribuir">
+        <h3>Contribuir</h3>
+        <ul>
+          <li><a href="#">Criar artigo</a></li>
+          <li><a href="#">Carregar arquivo</a></li>
+          <li><a href="#">Portal comunitário</a></li>
+          <li><a href="#">Páginas especiais</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- COLUNA PRINCIPAL: abas + artigo -->
+    <div class="content">
+
+      <!-- ABAS DA PÁGINA (Ler / Editar / Ver histórico) -->
+      <nav class="page-tabs" aria-label="Ações da página">
+        <ul>
+          <li><a href="#" aria-current="page">Ler</a></li>
+          <li><a href="#editar">Editar</a></li>
+          <li><a href="#historico">Ver histórico</a></li>
+        </ul>
+      </nav>
+    <article>
+      <header>
+        <h1>Séneca</h1>
+        <p><em>Lúcio Aneu Séneca (português europeu) ou Sêneca (português brasileiro)</em> (em latim: Lucius Annaeus Seneca; Corduba, ca. 4 a.C. – Roma, 65)
+          foi um filósofo estoico e um dos mais célebres advogados, oradores, escritores e pensadores do Império Romano. Conhecido também como Séneca (ou Sêneca),
+          o Moço, o Filósofo, ou ainda, o Jovem, sua obra literária e filosófica, tida como modelo do pensador estoico durante o Renascimento,
+          inspirou o desenvolvimento da tragédia na dramaturgia europeia renascentista.</p>
+      </header>
+
+      <p>Sêneca foi simultaneamente dramaturgo de sucesso, uma das pessoas mais ricas de Roma, estadista famoso e conselheiro do imperador.
+        Sêneca teve que negociar, persuadir e planejar seu caminho pela vida. Ao invés de filosofar da segurança da cátedra de uma universidade,
+        ele teve que lidar constantemente com pessoas não cooperativas e poderosas e enfrentar o desastre, o exílio,
+        a saúde frágil e a condenação à morte. Sêneca correu riscos e teve grandes feitos.</p>
+
+      <h2>Origens familiares</h2>
+      <p>Oriundo de família ilustre, era o segundo filho de Hélvia e de Marco Aneu Sêneca (Séneca, o Velho). O irmão mais velho de Lúcio chamava-se Lúcio Júnio Gálio e era procônsul (administrador público) na Acaia, onde, em 53,
+        se encontrou com o apóstolo cristão Paulo. Séneca, o Jovem, foi tio do poeta Lucano.</p>
+      <p>Ainda criança (três anos), foi enviado a Roma para estudar oratória e filosofia. Com a saúde abalada pelo rigor dos estudos, passou uma temporada no Egito para se recuperar e
+        regressou a Roma por volta do ano 31. Nessa ocasião, iniciou carreira como orador e advogado e logo chegou ao senado.</p>
+
+      <figure>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/4/44/Duble_herma_of_Socrates_and_Seneca_Antikensammlung_Berlin_07.jpg"
+          alt="Sêneca, parte da herma dupla de Sócrates e Sêneca"
+          width="100%"
+          loading="lazy">
+        <figcaption>Herma dupla de Sócrates e Sêneca (Antikensammlung, Berlim).</figcaption>
+      </figure>
+    </article>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <small>Conteúdo fictício para fins educativos — Projeto “Recriando Wikipedia”.</small>
+  </footer>
+</body>
+</html>
